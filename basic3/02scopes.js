@@ -1,5 +1,7 @@
 // // this is '{}' scope
 
+//>>>>>>>>>>>>>>>>>> https://www.youtube.com/watch?v=eWwge2YpHhc&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=22
+
 // // not using var
 
 // var c =300
@@ -18,17 +20,17 @@
 
 // >>>>>>>>>>>
 
-// function one(){
-//     const userName = "Akash"
+function one(){
+    const userName = "Akash"
 
-//     function two(){
-//         const website = "youtube"
-//         console.log(userName)
-//     }
-//     two()
-// }
+    function two(){
+        const website = "youtube"
+        console.log(userName) //inner function can access outsides' function key and value like, "One is parent and Two is child"
+    }
+    two()
+}
 
-// one()
+one() 
 
 // //END
 
@@ -42,7 +44,7 @@
 // }
 // // console.log(addOne(5));
 
-// const addTwo = function(num){
+// const addTwo = function(num){  //this is also function but most of time called "expression"
 //     return num+2
 // }
 // console.log(addTwo(10));
